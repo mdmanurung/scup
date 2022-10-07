@@ -4,6 +4,7 @@ project:
 website:
   title: "scup"
   description: "Your go-to for catching up with everything single-cell related."
+  site-url: https://scup.netlify.app
   repo-url: https://github.com/mdmanurung/scup
   open-graph: true
   twitter-card:
@@ -20,6 +21,7 @@ website:
       - icon: twitter
         aria-label: twitter
         href: https://twitter.com/mikhaeldito313
+
 format:
   html:
     theme: ember.scss

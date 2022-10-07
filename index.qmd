@@ -1,6 +1,6 @@
 ---
 title: "Single-Cell Updates"
-subtitle: "Single-cell news and conversations curated by Mikhael D. Manurung"
+subtitle: "Single-cell news and conversations every week."
 listing:
   feed: true
   contents: posts
@@ -13,3 +13,4 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+  
