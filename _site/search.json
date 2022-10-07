@@ -1,24 +1,17 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About scup",
+    "section": "",
+    "text": "The single-cell field is moving fast. scup is here to help."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Single-Cell Updates",
     "section": "",
-    "text": "news\n\n\n\nThis is the first post in a Quarto blog. Welcome!\n\n\n\nTristan O’Malley\n\n\nOct 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "news\n\n\n\n\n\n\n\nMikhael D. Manurung, Tristan O’Malley\n\n\nOct 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",

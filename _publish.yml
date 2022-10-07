@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: ce38b73e-8b80-4e10-b811-6e780172f6f9
+      url: 'https://scup.netlify.app'
