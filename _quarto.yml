@@ -15,6 +15,7 @@ website:
     right:
       - text: "by Mikhael D. Manurung"
         href: https://mdmanurung.rbind.io
+      - about.qmd
       - icon: github
         aria-label: github
         href: https://github.com/mdmanurung
@@ -26,6 +27,7 @@ format:
   html:
     theme: ember.scss
     css: styles.css
+    include-after-body: footer.html
 
 editor: visual
 

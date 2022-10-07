@@ -10,34 +10,7 @@
 <atom:link href="https://scup.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description>Your go-to for catching up with everything single-cell related.</description>
 <generator>quarto-0.9.312</generator>
-<lastBuildDate>Thu, 06 Oct 2022 22:00:00 GMT</lastBuildDate>
-<item>
-  <title>Post With Code</title>
-  <dc:creator>Harlow Malloc</dc:creator>
-  <link>https://scup.netlify.app/posts/post-with-code/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is a post with executable code.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="dv" style="color: #AD0000;">1</span> <span class="sc" style="color: #5E5E5E;">+</span> <span class="dv" style="color: #AD0000;">1</span></span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-
-
-
- ]]></description>
-  <category>news</category>
-  <category>code</category>
-  <category>analysis</category>
-  <guid>https://scup.netlify.app/posts/post-with-code/index.html</guid>
-  <pubDate>Thu, 06 Oct 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://scup.netlify.app/\posts\post-with-code\image.jpg" medium="image" type="image/jpeg"/>
-</item>
+<lastBuildDate>Mon, 03 Oct 2022 22:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Tristan O'Malley</dc:creator>
