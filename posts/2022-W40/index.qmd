@@ -32,6 +32,19 @@ https://twitter.com/simocristea/status/1577313316120059904
 brain organoid
 https://www.cell.com/cell/fulltext/S0092-8674(22)01168-0
 
+nextflow pipelines
+https://github.com/nf-core/scrnaseq/releases/tag/2.1.0
+
+spatial transcriptomics
+https://twitter.com/rmassonix/status/1577238852397596673
+https://twitter.com/Sanjusinha7/status/1578434020643205120
+
+single-cell
+https://twitter.com/rmassonix/status/1577714756047278080
+
+scBert
+https://www.nature.com/articles/s42256-022-00534-z
+
 ## Job Opportunities
 
 ## Acknowledgements {.appendix}
