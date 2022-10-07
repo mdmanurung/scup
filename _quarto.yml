@@ -15,7 +15,6 @@ website:
     right:
       - text: "by Mikhael D. Manurung"
         href: https://mdmanurung.rbind.io
-      - about.qmd
       - icon: github
         aria-label: github
         href: https://github.com/mdmanurung
