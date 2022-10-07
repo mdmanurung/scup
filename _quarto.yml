@@ -3,16 +3,26 @@ project:
 
 website:
   title: "scup"
+  description: "Your go-to for catching up with everything single-cell related."
+  repo-url: https://github.com/mdmanurung/scup
+  open-graph: true
+  twitter-card:
+    creator: "@mikhaeldito313"
+    card-style: summary_large_image
   navbar:
+    background: "#eeeeee"
     right:
-      - about.qmd
+      - text: "by Mikhael D. Manurung"
+        href: https://mdmanurung.rbind.io
       - icon: github
-        href: https://github.com/
+        aria-label: github
+        href: https://github.com/mdmanurung
       - icon: twitter
-        href: https://twitter.com
+        aria-label: twitter
+        href: https://twitter.com/mikhaeldito313
 format:
   html:
-    theme: cosmo
+    theme: ember.scss
     css: styles.css
 
 editor: visual

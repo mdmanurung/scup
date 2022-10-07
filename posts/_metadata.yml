@@ -6,3 +6,16 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# Author name of all blog posts
+author: "Mikhael D. Manurung"
+
+# ToC settings
+toc: true
+toc-depth: 2
+
+page-layout: article
+
+format:
+    html:
+        include-after-body: ../footer.html

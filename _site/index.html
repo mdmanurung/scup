@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>scup</title>
+<title>scup - Single-Cell Updates</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,9 +64,9 @@ ul.task-list{list-style: none;}
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -80,6 +80,13 @@ ul.task-list{list-style: none;}
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="scup - Single-Cell Updates">
+<meta property="og:image" content="\posts\welcome\thumbnail.jpg">
+<meta property="og:site-name" content="scup">
+<meta name="twitter:title" content="scup - Single-Cell Updates">
+<meta name="twitter:image" content="\posts\welcome\thumbnail.jpg">
+<meta name="twitter:creator" content="@mikhaeldito313">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -97,15 +104,15 @@ ul.task-list{list-style: none;}
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="https://mdmanurung.rbind.io">by Mikhael D. Manurung</a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/mdmanurung"><i class="bi bi-github" role="img" aria-label="github">
 </i> 
  </a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://twitter.com/mikhaeldito313"><i class="bi bi-twitter" role="img" aria-label="twitter">
 </i> 
  </a>
   </li>  
@@ -119,7 +126,8 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">scup</h1>
+      <h1 class="title">Single-Cell Updates</h1>
+            <p class="subtitle lead">Single-cell news and conversations curated by Mikhael D. Manurung</p>
                 </div>
   </div>
     
@@ -150,21 +158,18 @@ ul.task-list{list-style: none;}
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1665093600000" data-listing-file-modified-sort="1665161224131" data-listing-reading-time-sort="0.045">
-<div class="thumbnail">
-<p><a href="./posts/post-with-code/index.html"> <img src="\posts\post-with-code\image.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/post-with-code/index.html">
-<h3 class="no-anchor listing-title">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1665093600000" data-listing-file-modified-sort="1665161224131" data-listing-reading-time-sort="0.045">
+<a href="./posts/post-with-code/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="\posts\post-with-code\image.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Post With Code
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
@@ -176,57 +181,50 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/post-with-code/index.html">
-<div class="listing-description">
-<p>This is a post with executable code.</p>
+<div class="card-text listing-description">
+This is a post with executable code.
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/post-with-code/index.html">
-<div class="listing-date">
-Oct 7, 2022
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Harlow Malloc
 </div>
+<div class="listing-date">
+Oct 7, 2022
+</div>
+</div>
+</div>
+</div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1664834400000" data-listing-file-modified-sort="1665161224127" data-listing-reading-time-sort="0.16">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html"> <img src="\posts\welcome\thumbnail.jpg" class="thumnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/welcome/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="1" data-categories="news" data-listing-date-sort="1664834400000" data-listing-file-modified-sort="1665161224127" data-listing-reading-time-sort="0.16">
+<a href="./posts/welcome/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="\posts\welcome\thumbnail.jpg" class="thumbnail-image card-img" style="height: 250px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Welcome To My Blog
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
+</h5>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('news'); return false;">
 news
 </div>
 </div>
-<a href="./posts/welcome/index.html">
-<div class="listing-description">
-<p>This is the first post in a Quarto blog. Welcome!</p>
+<div class="card-text listing-description">
+This is the first post in a Quarto blog. Welcome!
 </div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html">
-<div class="listing-date">
-Oct 4, 2022
-</div>
+<div class="card-attribution card-text-small justify">
 <div class="listing-author">
 Tristan O’Malley
 </div>
-</a>
+<div class="listing-date">
+Oct 4, 2022
 </div>
+</div>
+</div>
+</div>
+</a>
 </div>
 </div>
 <div class="listing-no-matching d-none">
