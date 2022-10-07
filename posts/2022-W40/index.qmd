@@ -9,9 +9,30 @@ draft: true
 
 ## Articles
 
-## Twitter threads
+mrvi
+https://twitter.com/justjhong/status/1578136979140640770
+
+single-cell HiC
+https://twitter.com/tanlongzhi/status/1578241631718965248
+
+primer on scproteomics
+https://twitter.com/slavov_n/status/1577980487196463106
+
+embryonic development
+https://twitter.com/DanKeitley/status/1578396997517807617
+
+unlocking FFPE samples
+https://twitter.com/Aiims1742/status/1578423797077508110
+
+warning on scrnaseq integration
+https://twitter.com/simocristea/status/1578441695154163712
+
+amazing resource TCR
+https://twitter.com/simocristea/status/1577313316120059904
+
+brain organoid
+https://www.cell.com/cell/fulltext/S0092-8674(22)01168-0
 
 ## Job Opportunities
 
 ## Acknowledgements {.appendix}
-
