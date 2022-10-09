@@ -1,50 +1,71 @@
 ---
-title: "2022-W40"
-description: ""
+title: "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials"
+description: "2022-W40"
 date: "2022-10-09"
-categories: [single-cell]
-draft: true
+categories: [single-cell, combinatorial indexing, data integration, organoid, lineage tracing]
+draft: false
 ---
 
-## Articles
+## Applications
 
-mrvi
-https://twitter.com/justjhong/status/1578136979140640770
+**What mechanisms govern cell fate decisions in brain organoid?** [Barbara Treutlein](https://twitter.com/TreutleinLab) and colleagues presented a multi-omic atlas of brain organoid development and [Pando](https://quadbiolab.github.io/Pando/), a gene regulatory network inference algorithm, [to show the role of the transcription factor GLI3 for cortical fate establishments](https://www.nature.com/articles/s41586-022-05279-8).
 
-single-cell HiC
-https://twitter.com/tanlongzhi/status/1578241631718965248
+**Which melanoma cell subpopulations that could metastasize?** Here, Karras and colleagues leveraged lineage tracing to show that the \[ability to support growth and metastasis in melanoma are limited to distinct pools of cells\](https://www.nature.com/articles/s41586-022-05242-7).
 
-primer on scproteomics
-https://twitter.com/slavov_n/status/1577980487196463106
+## Technologies
 
-embryonic development
-https://twitter.com/DanKeitley/status/1578396997517807617
+[**Junyue Cao**](https://twitter.com/junyue_cao) **published TWO new cost-efficient single-cell technologies**[^1]:
 
-unlocking FFPE samples
-https://twitter.com/Aiims1742/status/1578423797077508110
+[^1]: **https://twitter.com/junyue_cao/status/1577682398149484544**
 
-warning on scrnaseq integration
-https://twitter.com/simocristea/status/1578441695154163712
+[EasySci](https://www.biorxiv.org/content/10.1101/2022.09.28.509825v1.full.pdf) for single-cell transcriptome or chromatin accessibility profiling from millions of single-cells cost-effectively. End-to-end protocols are publicly available!
 
-amazing resource TCR
-https://twitter.com/simocristea/status/1577313316120059904
+::: column-margin
+![](images/paste-C4B1557E.png){width="300"}
+:::
 
-brain organoid
-https://www.cell.com/cell/fulltext/S0092-8674(22)01168-0
+::: columns
+::: {.column width="50%"}
+[TrackerSci](https://www.biorxiv.org/content/10.1101/2022.10.01.509820v1.full.pdf) combined EdU labeling and and single-cell combinatorial indexing track cellular differentiation trajectories *in vivo.*
+:::
 
-nextflow pipelines
-https://github.com/nf-core/scrnaseq/releases/tag/2.1.0
+::: {.column width="50%"}
+![](images/paste-1B549687.png)
+:::
+:::
 
-spatial transcriptomics
-https://twitter.com/rmassonix/status/1577238852397596673
-https://twitter.com/Sanjusinha7/status/1578434020643205120
+**Killer spatial omics technology by NanoString** to [profile 980 RNAs and 108 proteins at a subcellular resolution in FFPE tissues](https://www.nature.com/articles/s41587-022-01483-z).
 
-single-cell
-https://twitter.com/rmassonix/status/1577714756047278080
+[![Cell type map of NSCLC tissues (taken from NanoString's website).](images/paste-6404C7E6.png)](https://nanostring.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/)
 
-scBert
-https://www.nature.com/articles/s42256-022-00534-z
+## Methods
 
-## Job Opportunities
+**How can we explore sample-level heterogeneity without sacrificing single-cell resolutions?** [Justin Hong](https://twitter.com/justjhong) and colleagues from Nir Yosef's lab presented Multi-resolution Variational Inference, or [MrVI](https://www.biorxiv.org/content/10.1101/2022.10.04.510898v1), to tackle this challenge. This method incorporate the hierarchical structure of multi-study or -site data integration. Here's the [twitter thread by Justin](https://twitter.com/justjhong/status/1578136979140640770).
+
+**How should we integrate novel dataset and transfer annotations from the reference?** Meng Yang and colleagues presented [Concerto](https://www.nature.com/articles/s42256-022-00518-z) that leveraged [contrastive learning](https://www.v7labs.com/blog/contrastive-learning-guide#h1) approach to perform cell type classification, data integration, and reference mapping.^[https://www.nature.com/articles/s42256-022-00518-z]
+
+## Conversations
+
+**To integrate or not to integrate, that is the question.** Here's a thread by [Simona Cristea](https://twitter.com/simocristea) warning us [against blind application of data integration methods](https://twitter.com/simocristea/status/1578441680939732993). TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.[^2]
+
+[^2]: https://twitter.com/simocristea/status/1578441680939732993
+
+**How should we define cells in scATAC-Seq studies?** [Jason Buenrostro](https://twitter.com/JD_Buenrostro)'s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.[^3]
+
+[^3]: https://twitter.com/JD_Buenrostro/status/1577683940906704896
+
+::: column-margin
+[![](images/paste-FA8B02C0.png){width="400"}](https://twitter.com/JD_Buenrostro/status/1577683940906704896/photo/1)
+:::
+
+**Do you want to get up to speed with single-cell data analysis but don't know where to start?** [\@rmassonix](https://twitter.com/rmassonix) got you covered. Here he [curated a thorough collection of reviews to prepare you for both dry- and wet-lab sides of things.](https://twitter.com/rmassonix/status/1577714756047278080?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed&ref_url=notion%3A%2F%2Fwww.notion.so%2Fmdmanurung%2FSingle-cell-blog-newsletter-a16c1757f39a4b0fadd1e338f9220338%3Fp%3D9bb9dd60dff040fe80c68eaa69fd074b%26pm%3Ds) If you visit the thread, there's also bonus links to GitHub repositories showcasing end-to-end scRNA-Seq data analyses.
+
+## Jobs
+
+Prof. Petter Brodin (Imperial College London) is [looking a post-doc to investigate the regulation and function of human immune systems in children of different ages and their relation to disease.](https://www.imperial.ac.uk/jobs/description/MED03406/research-associate)
+
+[Genomics principal scientist job at FL86](https://boards.greenhouse.io/flagshippioneeringinc/jobs/6391418002?gh_jid=6391418002), a biotech founded by Flagship Pioneering, based in Cambridge, UK.
 
 ## Acknowledgements {.appendix}
+
+Credits to the original authors of the Twitter threads. I am here only to curate stuffs :)

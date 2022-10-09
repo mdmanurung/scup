@@ -1,0 +1,14 @@
+{
+  "hash": "66c7bdf9057467196cbc7c6ee1baa729",
+  "result": {
+    "markdown": "---\ntitle: \"2022-W40\"\ndescription: \"\"\ndate: \"2022-10-09\"\ncategories: [single-cell]\nengine: knitr\ndraft: true\n---\n\n\n## Articles\n\nmrvi\nhttps://twitter.com/justjhong/status/1578136979140640770\n\nsingle-cell HiC\nhttps://twitter.com/tanlongzhi/status/1578241631718965248\n\nprimer on scproteomics\nhttps://twitter.com/slavov_n/status/1577980487196463106\n\nembryonic development\nhttps://twitter.com/DanKeitley/status/1578396997517807617\n\nunlocking FFPE samples\nhttps://twitter.com/Aiims1742/status/1578423797077508110\n\n\n\n## Twitter threads\n\n## Job Opportunities\n\n## Acknowledgements {.appendix}\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

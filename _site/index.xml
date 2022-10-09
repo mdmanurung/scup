@@ -10,28 +10,91 @@
 <atom:link href="https://scup.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description>Your go-to for catching up with everything single-cell related.</description>
 <generator>quarto-1.1.251</generator>
-<lastBuildDate>Mon, 03 Oct 2022 22:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 08 Oct 2022 22:00:00 GMT</lastBuildDate>
 <item>
-  <title>Welcome To My Blog</title>
+  <title>Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials</title>
   <dc:creator>Mikhael D. Manurung</dc:creator>
-  <dc:creator>Tristan O'Malley</dc:creator>
-  <link>https://scup.netlify.app/posts/welcome/index.html</link>
+  <link>https://scup.netlify.app/posts/2022-W40/index.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="https://scup.netlify.app/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<section id="applications" class="level2">
+<h2 class="anchored" data-anchor-id="applications">Applications</h2>
+<p><strong>What mechanisms govern cell fate decisions in brain organoid?</strong> <a href="https://twitter.com/TreutleinLab">Barbara Treutlein</a> and colleagues presented a multi-omic atlas of brain organoid development and <a href="https://quadbiolab.github.io/Pando/">Pando</a>, a gene regulatory network inference algorithm, <a href="https://www.nature.com/articles/s41586-022-05279-8">to show the role of the transcription factor GLI3 for cortical fate establishments</a>.</p>
+<p><strong>Which melanoma cell subpopulations that could metastasize?</strong> Here, Karras and colleagues leveraged lineage tracing to show that the [ability to support growth and metastasis in melanoma are limited to distinct pools of cells](https://www.nature.com/articles/s41586-022-05242-7).</p>
+</section>
+<section id="technologies" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="technologies">Technologies</h2>
+<p><a href="https://twitter.com/junyue_cao"><strong>Junyue Cao</strong></a> <strong>published TWO new cost-efficient single-cell technologies</strong><sup>1</sup>:</p>
+<p><a href="https://www.biorxiv.org/content/10.1101/2022.09.28.509825v1.full.pdf">EasySci</a> for single-cell transcriptome or chromatin accessibility profiling from millions of single-cells cost-effectively. End-to-end protocols are publicly available!</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><img src="https://scup.netlify.app/posts/2022-W40/images/paste-C4B1557E.png" class="img-fluid" width="300"></p>
+</div></div><div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="https://www.biorxiv.org/content/10.1101/2022.10.01.509820v1.full.pdf">TrackerSci</a> combined EdU labeling and and single-cell combinatorial indexing track cellular differentiation trajectories <em>in vivo.</em></p>
+</div><div class="column" style="width:50%;">
+<p><img src="https://scup.netlify.app/posts/2022-W40/images/paste-1B549687.png" class="img-fluid"></p>
+</div>
+</div>
+<p><strong>Killer spatial omics technology by NanoString</strong> to <a href="https://www.nature.com/articles/s41587-022-01483-z">profile 980 RNAs and 108 proteins at a subcellular resolution in FFPE tissues</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://nanostring.com/products/cosmx-spatial-molecular-imager/ffpe-dataset/"><img src="https://scup.netlify.app/posts/2022-W40/images/paste-6404C7E6.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">Cell type map of NSCLC tissues (taken from NanoString’s website).</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p><strong>How can we explore sample-level heterogeneity without sacrificing single-cell resolutions?</strong> <a href="https://twitter.com/justjhong">Justin Hong</a> and colleagues from Nir Yosef’s lab presented Multi-resolution Variational Inference, or <a href="https://www.biorxiv.org/content/10.1101/2022.10.04.510898v1">MrVI</a>, to tackle this challenge. This method incorporate the hierarchical structure of multi-study or -site data integration. Here’s the <a href="https://twitter.com/justjhong/status/1578136979140640770">twitter thread by Justin</a>.</p>
+<p><strong>How should we integrate novel dataset and transfer annotations from the reference?</strong> Meng Yang and colleagues presented <a href="https://www.nature.com/articles/s42256-022-00518-z">Concerto</a> that leveraged <a href="https://www.v7labs.com/blog/contrastive-learning-guide#h1">contrastive learning</a> approach to perform cell type classification, data integration, and reference mapping.<sup>2</sup></p>
+</section>
+<section id="conversations" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="conversations">Conversations</h2>
+<p><strong>To integrate or not to integrate, that is the question.</strong> Here’s a thread by <a href="https://twitter.com/simocristea">Simona Cristea</a> warning us <a href="https://twitter.com/simocristea/status/1578441680939732993">against blind application of data integration methods</a>. TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.<sup>3</sup></p>
+<p><strong>How should we define cells in scATAC-Seq studies?</strong> <a href="https://twitter.com/JD_Buenrostro">Jason Buenrostro</a>’s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.<sup>4</sup></p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://twitter.com/JD_Buenrostro/status/1577683940906704896/photo/1"><img src="https://scup.netlify.app/posts/2022-W40/images/paste-FA8B02C0.png" class="img-fluid figure-img" width="400"></a></p>
+</figure>
+</div>
+</div></div><p><strong>Do you want to get up to speed with single-cell data analysis but don’t know where to start?</strong> <a href="https://twitter.com/rmassonix">@rmassonix</a> got you covered. Here he <a href="https://twitter.com/rmassonix/status/1577714756047278080?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed&amp;ref_url=notion%3A%2F%2Fwww.notion.so%2Fmdmanurung%2FSingle-cell-blog-newsletter-a16c1757f39a4b0fadd1e338f9220338%3Fp%3D9bb9dd60dff040fe80c68eaa69fd074b%26pm%3Ds">curated a thorough collection of reviews to prepare you for both dry- and wet-lab sides of things.</a> If you visit the thread, there’s also bonus links to GitHub repositories showcasing end-to-end scRNA-Seq data analyses.</p>
+</section>
+<section id="jobs" class="level2">
+<h2 class="anchored" data-anchor-id="jobs">Jobs</h2>
+<p>Prof.&nbsp;Petter Brodin (Imperial College London) is <a href="https://www.imperial.ac.uk/jobs/description/MED03406/research-associate">looking a post-doc to investigate the regulation and function of human immune systems in children of different ages and their relation to disease.</a></p>
+<p><a href="https://boards.greenhouse.io/flagshippioneeringinc/jobs/6391418002?gh_jid=6391418002">Genomics principal scientist job at FL86</a>, a biotech founded by Flagship Pioneering, based in Cambridge, UK.</p>
+</section>
 
 
 
- ]]></description>
-  <category>news</category>
-  <guid>https://scup.netlify.app/posts/welcome/index.html</guid>
-  <pubDate>Mon, 03 Oct 2022 22:00:00 GMT</pubDate>
-  <media:content url="https://scup.netlify.app/posts/welcome/thumbnail.jpg" medium="image" type="image/jpeg"/>
+<div id="quarto-appendix" class="default"><section id="acknowledgements" class="level2 appendix"><h2 class="quarto-appendix-heading">Acknowledgements</h2><div class="quarto-appendix-contents">
+
+<p>Credits to the original authors of the Twitter threads. I am here only to curate stuffs :)</p>
+
+
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><strong>https://twitter.com/junyue_cao/status/1577682398149484544</strong>↩︎</p></li>
+<li id="fn2"><p>https://www.nature.com/articles/s42256-022-00518-z↩︎</p></li>
+<li id="fn3"><p>https://twitter.com/simocristea/status/1578441680939732993↩︎</p></li>
+<li id="fn4"><p>https://twitter.com/JD_Buenrostro/status/1577683940906704896↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>single-cell</category>
+  <category>combinatorial indexing</category>
+  <category>data integration</category>
+  <category>organoid</category>
+  <category>lineage tracing</category>
+  <guid>https://scup.netlify.app/posts/2022-W40/index.html</guid>
+  <pubDate>Sat, 08 Oct 2022 22:00:00 GMT</pubDate>
+  <media:content url="https://scup.netlify.app/posts/2022-W40/images/paste-C4B1557E.png" medium="image" type="image/png" height="136" width="144"/>
 </item>
 </channel>
 </rss>

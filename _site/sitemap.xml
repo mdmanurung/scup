@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://cozy-profiterole-5fccae.netlify.app/about.html</loc>
-    <lastmod>2022-10-07T19:49:22.989Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cozy-profiterole-5fccae.netlify.app/index.html</loc>
-    <lastmod>2022-10-07T19:49:24.396Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cozy-profiterole-5fccae.netlify.app/posts/welcome/index.html</loc>
-    <lastmod>2022-10-07T19:49:24.928Z</lastmod>
+    <loc>https://scup.netlify.app/posts/2022-W40/index.html</loc>
+    <lastmod>2022-10-09T12:02:36.888Z</lastmod>
   </url>
   <url>
     <loc>https://scup.netlify.app/index.html</loc>
-    <lastmod>2022-10-07T20:05:49.369Z</lastmod>
+    <lastmod>2022-10-09T12:02:37.333Z</lastmod>
   </url>
   <url>
-    <loc>https://scup.netlify.app/posts/welcome/index.html</loc>
-    <lastmod>2022-10-07T19:59:06.332Z</lastmod>
+    <loc>https://scup.netlify.app/about.html</loc>
+    <lastmod>2022-10-09T11:12:04.205Z</lastmod>
   </url>
 </urlset>

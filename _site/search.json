@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "posts/2022-W40/index.html#applications",
+    "href": "posts/2022-W40/index.html#applications",
+    "title": "2022-W40",
+    "section": "Applications",
+    "text": "Applications"
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#technology",
+    "href": "posts/2022-W40/index.html#technology",
+    "title": "2022-W40",
+    "section": "Technology",
+    "text": "Technology\nJunyue Cao published TWO new cost-efficient single-cell technologies1:\nEasySci for single-cell transcriptome or chromatin accessibility profiling from millions of single-cells cost-effectively. End-to-end protocols are publicly available!\n\n\n\n\n\nTrackerSci combined EdU labeling and and single-cell combinatorial indexing track cellular differentiation trajectories in vivo.\n\n\n\n\nKiller spatial omics technology by NanoString to profile 980 RNAs and 108 proteins at a subcellular resolution in FFPE tissues.\n\n\n\nCell type map of NSCLC tissues (taken from NanoString’s website)."
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#methods",
+    "href": "posts/2022-W40/index.html#methods",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
+    "section": "Methods",
+    "text": "Methods\nHow can we explore sample-level heterogeneity without sacrificing single-cell resolutions? Justin Hong and colleagues from Nir Yosef’s lab presented Multi-resolution Variational Inference, or MrVI, to tackle this challenge. This method incorporate the hierarchical structure of multi-study or -site data integration. Here’s the twitter thread by Justin.\nHow should we integrate novel dataset and transfer annotations from the reference? Meng Yang and colleagues presented Concerto that leveraged contrastive learning approach to perform cell type classification, data integration, and reference mapping.2"
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#threads",
+    "href": "posts/2022-W40/index.html#threads",
+    "title": "2022-W40",
+    "section": "Threads",
+    "text": "Threads\nTo integrate or not to integrate, that is the question. Here’s a thread by Simona Cristea warning us against blind application of data integration methods. TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.2\nHow should we define cells in scATAC-Seq studies? Jason Buenrostro’s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.3\n\n\n\n\n\n\n\nDo you want to get up to speed with single-cell data analysis but don’t know where to start? @rmassonix got you covered. Here he curated a thorough collection of reviews to prepare you for both dry- and wet-lab sides of things. If you visit the thread, there’s also bonus links to GitHub repositories showcasing end-to-end scRNA-Seq data analyses."
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#jobs",
+    "href": "posts/2022-W40/index.html#jobs",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
+    "section": "Jobs",
+    "text": "Jobs\nProf. Petter Brodin (Imperial College London) is looking a post-doc to investigate the regulation and function of human immune systems in children of different ages and their relation to disease.\nGenomics principal scientist job at FL86, a biotech founded by Flagship Pioneering, based in Cambridge, UK."
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#acknowledgements",
+    "href": "posts/2022-W40/index.html#acknowledgements",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nCredits to the original authors of the Twitter threads. I am here only to curate stuffs :)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Single-Cell Updates",
+    "section": "",
+    "text": "single-cell\n\n\ncombinatorial indexing\n\n\ndata integration\n\n\norganoid\n\n\nlineage tracing\n\n\n\n2022-W40\n\n\n\nMikhael D. Manurung\n\n\nOct 9, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About scup",
@@ -7,17 +56,24 @@
     "text": "The single-cell field is moving fast. scup is here to help."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Single-Cell Updates",
+    "objectID": "posts/2022-W40/index.html",
+    "href": "posts/2022-W40/index.html",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
     "section": "",
-    "text": "news\n\n\n\n\n\n\n\nMikhael D. Manurung, Tristan O’Malley\n\n\nOct 4, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "What mechanisms govern cell fate decisions in brain organoid? Barbara Treutlein and colleagues presented a multi-omic atlas of brain organoid development and Pando, a gene regulatory network inference algorithm, to show the role of the transcription factor GLI3 for cortical fate establishments.\nWhich melanoma cell subpopulations that could metastasize? Here, Karras and colleagues leveraged lineage tracing to show that the [ability to support growth and metastasis in melanoma are limited to distinct pools of cells](https://www.nature.com/articles/s41586-022-05242-7)."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "objectID": "posts/2022-W40/index.html#technologies",
+    "href": "posts/2022-W40/index.html#technologies",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
+    "section": "Technologies",
+    "text": "Technologies\nJunyue Cao published TWO new cost-efficient single-cell technologies1:\nEasySci for single-cell transcriptome or chromatin accessibility profiling from millions of single-cells cost-effectively. End-to-end protocols are publicly available!\n\n\n\n\n\nTrackerSci combined EdU labeling and and single-cell combinatorial indexing track cellular differentiation trajectories in vivo.\n\n\n\n\nKiller spatial omics technology by NanoString to profile 980 RNAs and 108 proteins at a subcellular resolution in FFPE tissues.\n\n\n\nCell type map of NSCLC tissues (taken from NanoString’s website)."
+  },
+  {
+    "objectID": "posts/2022-W40/index.html#conversations",
+    "href": "posts/2022-W40/index.html#conversations",
+    "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
+    "section": "Conversations",
+    "text": "Conversations\nTo integrate or not to integrate, that is the question. Here’s a thread by Simona Cristea warning us against blind application of data integration methods. TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.3\nHow should we define cells in scATAC-Seq studies? Jason Buenrostro’s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.4\n\n\n\n\n\n\n\nDo you want to get up to speed with single-cell data analysis but don’t know where to start? @rmassonix got you covered. Here he curated a thorough collection of reviews to prepare you for both dry- and wet-lab sides of things. If you visit the thread, there’s also bonus links to GitHub repositories showcasing end-to-end scRNA-Seq data analyses."
   }
 ]
