@@ -60,7 +60,7 @@
     "href": "posts/2022-W40/index.html",
     "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
     "section": "",
-    "text": "What mechanisms govern cell fate decisions in brain organoid? Barbara Treutlein and colleagues presented a multi-omic atlas of brain organoid development and Pando, a gene regulatory network inference algorithm, to show the role of the transcription factor GLI3 for cortical fate establishments.\nWhich melanoma cell subpopulations that could metastasize? Here, Karras and colleagues leveraged lineage tracing to show that the [ability to support growth and metastasis in melanoma are limited to distinct pools of cells](https://www.nature.com/articles/s41586-022-05242-7)."
+    "text": "What mechanisms govern cell fate decisions in brain organoid? Barbara Treutlein and colleagues presented a multi-omic atlas of brain organoid development and Pando, a gene regulatory network inference algorithm, to show the role of the transcription factor GLI3 for cortical fate establishments.\nWhich melanoma cell subpopulations that could metastasize? Here, Karras and colleagues leveraged lineage tracing to show that the ability to support growth and metastasis in melanoma are limited to distinct pools of cells."
   },
   {
     "objectID": "posts/2022-W40/index.html#technologies",

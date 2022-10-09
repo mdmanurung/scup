@@ -23,7 +23,7 @@
 <section id="applications" class="level2">
 <h2 class="anchored" data-anchor-id="applications">Applications</h2>
 <p><strong>What mechanisms govern cell fate decisions in brain organoid?</strong> <a href="https://twitter.com/TreutleinLab">Barbara Treutlein</a> and colleagues presented a multi-omic atlas of brain organoid development and <a href="https://quadbiolab.github.io/Pando/">Pando</a>, a gene regulatory network inference algorithm, <a href="https://www.nature.com/articles/s41586-022-05279-8">to show the role of the transcription factor GLI3 for cortical fate establishments</a>.</p>
-<p><strong>Which melanoma cell subpopulations that could metastasize?</strong> Here, Karras and colleagues leveraged lineage tracing to show that the [ability to support growth and metastasis in melanoma are limited to distinct pools of cells](https://www.nature.com/articles/s41586-022-05242-7).</p>
+<p><strong>Which melanoma cell subpopulations that could metastasize?</strong> Here, Karras and colleagues leveraged lineage tracing to show that the <a href="https://www.nature.com/articles/s41586-022-05242-7">ability to support growth and metastasis in melanoma are limited to distinct pools of cells</a>.</p>
 </section>
 <section id="technologies" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="technologies">Technologies</h2>
