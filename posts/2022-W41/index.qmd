@@ -2,11 +2,11 @@
 title: "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more"
 description: "2022-W41"
 date: "2022-10-16"
-categories: []
+categories: [data integration, spatial omics, velocity, pseudobulk, 10X Fixed RNA Profiling]
 format:
     html:
         self-contained: true
-draft: fales
+draft: false
 ---
 
 ## Applications and Methods
@@ -47,9 +47,13 @@ To my knowledge, cell-type imbalance is exactly what motivates [semi-supervised 
 
 ## Conversations
 
-**The [10X fixed RNA profiling kit](https://www.10xgenomics.com/products/fixed-rna-profiling) has been shown by multiple teams to be more sensitive than 10X 3' v3.1.** See threads by [Fred Hutch Innovation Lab](https://twitter.com/HutchInnovation/status/1579958940783505411) and the inimitable [Luciano Martelotto](https://twitter.com/lgmartelotto/status/1541801740344885248?s=46&t=O2v-aD11SuSzzKgLVimV4g). Despite the additional wash steps, it seems that you would get higher cell recovery rate. The probes exclude many genes including mitochondrial and ribosomal genes, so you would save some money for sequencing there!^[https://support.10xgenomics.com/fixed-rna-profiling/probe-sets/overview]
+**The [10X fixed RNA profiling kit](https://www.10xgenomics.com/products/fixed-rna-profiling) has been shown by multiple teams to be more sensitive than 10X 3' v3.1.** See threads by [Fred Hutch Innovation Lab](https://twitter.com/HutchInnovation/status/1579958940783505411) and the inimitable [Luciano Martelotto](https://twitter.com/lgmartelotto/status/1541801740344885248?s=46&t=O2v-aD11SuSzzKgLVimV4g). Despite the additional wash steps, it seems that you would get higher cell recovery rate. The probes exclude many genes including mitochondrial and ribosomal genes, so you would save some money for sequencing there![^5]
 
-**Alexander Toenges wondered whether the ParseBio kit is suitable for BioLegend's TotalSeq antibodies**.^[https://twitter.com/ATpoint90/status/1580154120987873280] There doesn't seem to be an answer yet; would be interested to hear one!
+[^5]: https://support.10xgenomics.com/fixed-rna-profiling/probe-sets/overview
+
+**Alexander Toenges wondered whether the ParseBio kit is suitable for BioLegend's TotalSeq antibodies**.[^6] There doesn't seem to be an answer yet; would be interested to hear one!
+
+[^6]: https://twitter.com/ATpoint90/status/1580154120987873280
 
 *Have you ever thought of something that seemed to be a no-brainer but then you were proven false overwhelmingly??* Here's [a thread on the terminology of "pseudobulk"](https://twitter.com/lpachter/status/1579827777510834180), initiated by Lior Pachter. As pointed out by many people in the thread, single-cell protocols could result in the loss of neutrophils, neurons, adipocytes, and many others, all of which will not happen if you just blender the cells and do the plain ol' bulk RNA-Seq. Peter Karchenko and Erik van Nimwegen proposed to use the term 'in-silico bulk' instead.
 
