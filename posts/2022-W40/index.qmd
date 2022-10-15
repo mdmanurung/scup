@@ -45,17 +45,19 @@ draft: false
 
 **How can we explore sample-level heterogeneity without sacrificing single-cell resolutions?** [Justin Hong](https://twitter.com/justjhong) and colleagues from Nir Yosef's lab presented Multi-resolution Variational Inference, or [MrVI](https://www.biorxiv.org/content/10.1101/2022.10.04.510898v1), to tackle this challenge. This method incorporate the hierarchical structure of multi-study or -site data integration. Here's the [twitter thread by Justin](https://twitter.com/justjhong/status/1578136979140640770).
 
-**How should we integrate novel dataset and transfer annotations from the reference?** Meng Yang and colleagues presented [Concerto](https://www.nature.com/articles/s42256-022-00518-z) that leveraged [contrastive learning](https://www.v7labs.com/blog/contrastive-learning-guide#h1) approach to perform cell type classification, data integration, and reference mapping.^[https://www.nature.com/articles/s42256-022-00518-z]
+**How should we integrate novel dataset and transfer annotations from the reference?** Meng Yang and colleagues presented [Concerto](https://www.nature.com/articles/s42256-022-00518-z) that leveraged [contrastive learning](https://www.v7labs.com/blog/contrastive-learning-guide#h1) approach to perform cell type classification, data integration, and reference mapping.[^2]
+
+[^2]: https://www.nature.com/articles/s42256-022-00518-z
 
 ## Conversations
 
-**To integrate or not to integrate, that is the question.** Here's a thread by [Simona Cristea](https://twitter.com/simocristea) warning us [against blind application of data integration methods](https://twitter.com/simocristea/status/1578441680939732993). TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.[^2]
+**To integrate or not to integrate, that is the question.** Here's a thread by [Simona Cristea](https://twitter.com/simocristea) warning us [against blind application of data integration methods](https://twitter.com/simocristea/status/1578441680939732993). TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.[^3]
 
-[^2]: https://twitter.com/simocristea/status/1578441680939732993
+[^3]: https://twitter.com/simocristea/status/1578441680939732993
 
-**How should we define cells in scATAC-Seq studies?** [Jason Buenrostro](https://twitter.com/JD_Buenrostro)'s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.[^3]
+**How should we define cells in scATAC-Seq studies?** [Jason Buenrostro](https://twitter.com/JD_Buenrostro)'s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.[^4]
 
-[^3]: https://twitter.com/JD_Buenrostro/status/1577683940906704896
+[^4]: https://twitter.com/JD_Buenrostro/status/1577683940906704896
 
 ::: column-margin
 [![](images/paste-FA8B02C0.png){width="400"}](https://twitter.com/JD_Buenrostro/status/1577683940906704896/photo/1)

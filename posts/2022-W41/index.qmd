@@ -1,0 +1,70 @@
+---
+title: ""
+description: "2022-W41"
+date: "2022-10-16"
+categories: []
+format:
+    html:
+        self-contained: true
+draft: true
+---
+
+## Applications and Methods
+
+**How conserved are the macrophage responses to bacterial infections?** [Itai Yanai](https://twitter.com/ItaiYanai) and colleagues demonstrated the conserved macrophage states in response to various bacterial species, including Group B Streptococcus, despite the variation in the relative frequencies of the states.[^1]. Tweetorial available [here](https://twitter.com/ItaiYanai/status/1580021725068398592).
+
+[^1]: https://www.cell.com/cell-reports/fulltext/S2211-1247(22)01327-4
+
+**Single-cell dataset imbalance significantly impacts data integration results**.[^2] The authors elaborately described the impact of cell-type imbalance and similarity across samples on clustering, marker-gene-based annotation, and more. Novel clustering metrics that took into account cell-type imbalance were proposed.
+
+[^2]: https://www.biorxiv.org/content/10.1101/2022.10.06.511156v1
+
+::: {.callout-note icon="false"}
+## Time for semi-supervised methods?
+
+To my knowledge, cell-type imbalance is exactly what motivates [semi-supervised STACAS](https://carmonalab.github.io/STACAS.demo/STACAS.demo.html#semi-supervised-integration) (ssSTACAS) by [Santiago Carmona](https://twitter.com/carmonation?lang=en)'s lab. Would be interesting to see how ssSTACAS or other semi-supervised methods fare here and in more complex cases such as the [multi-tissue multi-cancer datasets](https://github.com/ncborcherding/utility) curated by [Nick Borcherding](https://twitter.com/thehumanborch).
+:::
+
+**Can we identify cell-type specific genetic variants influencing disease?** Aviv Regev and colleagues introduced sc-linker, a framework to integrate scRNA-Seq and GWAS data to identify the likely cell types driving disease.[^3]
+
+[^3]: https://www.nature.com/articles/s41588-022-01187-9
+
+**Can we incorporate chromatin accessibility data to improve RNA velocity accuracy estimates?** [Joshua Welch](https://twitter.com/LabWelch) and colleagues showed that we can in their MultiVelo paper.[^4] They also showed that this model can reveal the extent of coupling or time lag between epigenomic and transcriptional changes.
+
+[^4]: https://t.co/KU0cpPn4om
+
+::: column-margin
+![Potential orderings of chromatin and RNA state changes](images/paste-E2F9F332.png)
+:::
+
+## Technologies
+
+**The year is 2022, scientists can now iterate between imaging and spatial transcriptomics on the same specimen.** [Jocelyn Kishi](https://twitter.com/jykishi) and colleagues present Light-Seq, now published in [Nature Methods](https://www.nature.com/articles/s41592-022-01604-1), that combined light-directed barcoding and spatially-indexed sequencing. Basically, Light-seq allows you to sequence cells from specific areas on a histology slide thanks to laser-guided chemistry and then return to the sample later for another imaging! There are excellent tweetorials by Jocelyn herself [here](https://twitter.com/jykishi/status/1579508555228798977) and by co-inventor [Emma West](https://twitter.com/_emmarosewest/) [here](https://twitter.com/_emmarosewest/status/1579508561880965120). If you're into podcasts, then [you're in luck](https://fiftyyears.com/translation-podcast/2022/10/10/illuminating-biological-context-with-josie-kishi). Truly, what an exciting year for spatial transcriptomics.
+
+::: column-margin
+![Selecting cells for Light-seq](images/paste-4745C123.png)
+:::
+
+## Conversations
+
+**The [10X fixed RNA profiling kit](https://www.10xgenomics.com/products/fixed-rna-profiling) has been shown by multiple teams to be more sensitive than 10X 3' v3.1.** See threads by [Fred Hutch Innovation Lab](https://twitter.com/HutchInnovation/status/1579958940783505411) and the inimitable [Luciano Martelotto](https://twitter.com/lgmartelotto/status/1541801740344885248?s=46&t=O2v-aD11SuSzzKgLVimV4g). Despite the additional wash steps, it seems that you would get higher cell recovery rate. The probes exclude many genes including mitochondrial and ribosomal genes, so you would save some money for sequencing there!^[https://support.10xgenomics.com/fixed-rna-profiling/probe-sets/overview]
+
+**Alexander Toenges wondered whether the ParseBio kit is suitable for BioLegend's TotalSeq antibodies**.^[https://twitter.com/ATpoint90/status/1580154120987873280] There doesn't seem to be an answer yet; would be interested to hear one!
+
+*Have you ever thought of something that seemed to be a no-brainer but then you were proven false overwhelmingly??* Here's [a thread on the terminology of "pseudobulk"](https://twitter.com/lpachter/status/1579827777510834180), initiated by Lior Pachter. As pointed out by many people in the thread, single-cell protocols could result in the loss of neutrophils, neurons, adipocytes, and many others, all of which will not happen if you just blender the cells and do the plain ol' bulk RNA-Seq. Peter Karchenko and Erik van Nimwegen proposed to use the term 'in-silico bulk' instead.
+
+## Miscellaneous
+
+### Tutorials
+
+[Geert van Geest](https://twitter.com/geertvangeest) shared his [curated list of Bioinformatics training materials](https://github.com/sib-swiss/training-collection/). Many, if not all, resources in the list are high in quality. Disappointed with the lack of spatial omics in the resource? Don't worry, [Sanju Sinha](https://twitter.com/Sanjusinha7) got you covered: [link to his curated list](https://twitter.com/Sanjusinha7/status/1578434020643205120).
+
+### Jobs
+
+[Dominic Grun](https://twitter.com/dominic_grun/) is looking for post-docs! - [Computational postdoc in spatial single-cell analysis of bone marrow and liver](https://t.co/gjPF5Lyzmm) - [Single-cell analysis of bone marrow biopsies from multiple myeloma patients undergoing CAR-T cell therapy](https://t.co/6wMRa99IDv)
+
+[Holger Heyn](https://twitter.com/hoheyn/status/1580574672437276672) is looking for a [senior lab technician](https://recruitment.crg.eu/content/jobs/position/single-cell-genomics-%E2%80%93-senior-lab-technician%E2%80%9D).
+
+## Acknowledgements {.appendix}
+
+Credits to the original authors of the Twitter threads. I am here only to curate stuffs :)
