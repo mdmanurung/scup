@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Single-Cell Updates",
     "section": "",
-    "text": "single-cell\n\n\ncombinatorial indexing\n\n\ndata integration\n\n\norganoid\n\n\nlineage tracing\n\n\n\n2022-W40\n\n\n\nMikhael D. Manurung\n\n\nOct 9, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "data integration\n\n\nspatial omics\n\n\nvelocity\n\n\npseudobulk\n\n\n10X Fixed RNA Profiling\n\n\n\n2022-W41\n\n\n\nMikhael D. Manurung\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsingle-cell\n\n\ncombinatorial indexing\n\n\ndata integration\n\n\norganoid\n\n\nlineage tracing\n\n\n\n2022-W40\n\n\n\nMikhael D. Manurung\n\n\nOct 9, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -75,5 +75,40 @@
     "title": "Organoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials",
     "section": "Conversations",
     "text": "Conversations\nTo integrate or not to integrate, that is the question. Here’s a thread by Simona Cristea warning us against blind application of data integration methods. TL;DR always compare your data representation before and after integration and spend some time to understand why the two differs.3\nHow should we define cells in scATAC-Seq studies? Jason Buenrostro’s call to 10X Genomics to improve the default cell thresholds for scATAC-Seq.4\n\n\n\n\n\n\n\nDo you want to get up to speed with single-cell data analysis but don’t know where to start? @rmassonix got you covered. Here he curated a thorough collection of reviews to prepare you for both dry- and wet-lab sides of things. If you visit the thread, there’s also bonus links to GitHub repositories showcasing end-to-end scRNA-Seq data analyses."
+  },
+  {
+    "objectID": "posts/2022-W41/index.html",
+    "href": "posts/2022-W41/index.html",
+    "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "",
+    "text": "How conserved are the macrophage responses to bacterial infections? Itai Yanai and colleagues demonstrated the conserved macrophage states in response to various bacterial species, including Group B Streptococcus, despite the variation in the relative frequencies of the states.1. Tweetorial available here.\nSingle-cell dataset imbalance significantly impacts data integration results.2 The authors elaborately described the impact of cell-type imbalance and similarity across samples on clustering, marker-gene-based annotation, and more. Novel clustering metrics that took into account cell-type imbalance were proposed.\n\n\n\n\n\n\nTime for semi-supervised methods?\n\n\n\nTo my knowledge, cell-type imbalance is exactly what motivates semi-supervised STACAS (ssSTACAS) by Santiago Carmona’s lab. Would be interesting to see how ssSTACAS or other semi-supervised methods fare here and in more complex cases such as the multi-tissue multi-cancer datasets curated by Nick Borcherding.\n\n\nCan we identify cell-type specific genetic variants influencing disease? Aviv Regev and colleagues introduced sc-linker, a framework to integrate scRNA-Seq and GWAS data to identify the likely cell types driving disease.3\nCan we incorporate chromatin accessibility data to improve RNA velocity accuracy estimates? Joshua Welch and colleagues showed that we can in their MultiVelo paper.4 They also showed that this model can reveal the extent of coupling or time lag between epigenomic and transcriptional changes.\n\n\n\n\n\nPotential orderings of chromatin and RNA state changes"
+  },
+  {
+    "objectID": "posts/2022-W41/index.html#technologies",
+    "href": "posts/2022-W41/index.html#technologies",
+    "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "Technologies",
+    "text": "Technologies\nThe year is 2022, scientists can now iterate between imaging and spatial transcriptomics on the same specimen. Jocelyn Kishi and colleagues present Light-Seq, now published in Nature Methods, that combined light-directed barcoding and spatially-indexed sequencing. Basically, Light-seq allows you to sequence cells from specific areas on a histology slide thanks to laser-guided chemistry and then return to the sample later for another imaging! There are excellent tweetorials by Jocelyn herself here and by co-inventor Emma West here. If you’re into podcasts, then you’re in luck. Truly, what an exciting year for spatial transcriptomics.\n\n\n\n\n\nSelecting cells for Light-seq"
+  },
+  {
+    "objectID": "posts/2022-W41/index.html#conversations",
+    "href": "posts/2022-W41/index.html#conversations",
+    "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "Conversations",
+    "text": "Conversations\nThe 10X fixed RNA profiling kit has been shown by multiple teams to be more sensitive than 10X 3’ v3.1. See threads by Fred Hutch Innovation Lab and the inimitable Luciano Martelotto. Despite the additional wash steps, it seems that you would get higher cell recovery rate. The probes exclude many genes including mitochondrial and ribosomal genes, so you would save some money for sequencing there!5\nAlexander Toenges wondered whether the ParseBio kit is suitable for BioLegend’s TotalSeq antibodies.6 There doesn’t seem to be an answer yet; would be interested to hear one!\nHave you ever thought of something that seemed to be a no-brainer but then you were proven false overwhelmingly?? Here’s a thread on the terminology of “pseudobulk”, initiated by Lior Pachter. As pointed out by many people in the thread, single-cell protocols could result in the loss of neutrophils, neurons, adipocytes, and many others, all of which will not happen if you just blender the cells and do the plain ol’ bulk RNA-Seq. Peter Karchenko and Erik van Nimwegen proposed to use the term ‘in-silico bulk’ instead."
+  },
+  {
+    "objectID": "posts/2022-W41/index.html#miscellaneous",
+    "href": "posts/2022-W41/index.html#miscellaneous",
+    "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "Miscellaneous",
+    "text": "Miscellaneous\n\nTutorials\nGeert van Geest shared his curated list of Bioinformatics training materials. Many, if not all, resources in the list are high in quality. Disappointed with the lack of spatial omics in the resource? Don’t worry, Sanju Sinha got you covered: link to his curated list.\n\n\nJobs\nDominic Grun is looking for post-docs! - Computational postdoc in spatial single-cell analysis of bone marrow and liver - Single-cell analysis of bone marrow biopsies from multiple myeloma patients undergoing CAR-T cell therapy\nHolger Heyn is looking for a senior lab technician."
+  },
+  {
+    "objectID": "posts/2022-W41/index.html#acknowledgements",
+    "href": "posts/2022-W41/index.html#acknowledgements",
+    "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nCredits to the original authors of the Twitter threads. I am here only to curate stuffs :)"
   }
 ]
