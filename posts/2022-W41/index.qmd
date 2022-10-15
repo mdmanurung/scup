@@ -1,12 +1,12 @@
 ---
-title: ""
+title: "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more"
 description: "2022-W41"
 date: "2022-10-16"
 categories: []
 format:
     html:
         self-contained: true
-draft: true
+draft: fales
 ---
 
 ## Applications and Methods
