@@ -11,19 +11,23 @@ draft: true
 
 ## Applications
 
-The Black Death left its mark not only on our history but also on our immunity. Luis Barreiro's lab showed that **natural selection driven by the Black Death, that were protective at that time, could be linked to present-day susceptibility to autoimmune diseases, such as Crohn's disease.**^[https://www.nature.com/articles/s41586-022-05349-x#Fig3] Great combinations of ancient DNA work, population genomics, and in-vitro infections.
+The Black Death left its mark not only on our history but also on our immunity. Luis Barreiro's lab showed that **natural selection driven by the Black Death, that were protective at that time, could be linked to present-day susceptibility to autoimmune diseases, such as Crohn's disease.**[^1] Great combinations of ancient DNA work, population genomics, and in-vitro infections.
+	
+[^1]: <a href= https://www.nature.com/articles/s41586-022-05349-x#Fig3">Link to paper</a>
 
-Nicolet and Wolkers showed that **mRNA expression levels are poorly correlated with protein abundance (Pearson r ~ 0.4)**.^[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276294#sec015] Interestingly, certain gene charactistics, such as untranslated region (UTR) lengths, could affect mRNA-protein correlation.
+Nicolet and Wolkers showed that **mRNA expression levels are poorly correlated with protein abundance (Pearson r \~ 0.4)**.[^2] Interestingly, certain gene charactistics, such as untranslated region (UTR) lengths, could affect mRNA-protein correlation.
 
-::: {.column-margin}
+[^2]: <a href=https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0276294#sec015>Link to paper</a>
+
+::: column-margin
 ![Figure 1E: Correlation between mRNA and protein abundance in activated T cells.](images/paste-CA6B1DB9.png)
 :::
 
 ## Methods
 
-Cell-type annotation is a critical step in single-cell analysis pipeline. For scATAC-Seq, we can annotate cells using either tools developed for scRNA-Seq or transfer labels from RNA to ATAC. Here, Yuge Wang and colleagues **performed a thorough benchmarking and showed subpar performance of all these methods.**[^1] Using Multiome data as reference can help improve the accuracy, but only to some extent.
+Cell-type annotation is a critical step in single-cell analysis pipeline. For scATAC-Seq, we can annotate cells using either tools developed for scRNA-Seq or transfer labels from RNA to ATAC. Here, Yuge Wang and colleagues **performed a thorough benchmarking and showed subpar performance of all these methods.**[^3] Using Multiome data as reference can help improve the accuracy, but only to some extent.
 
-[^1]: https://www.biorxiv.org/content/10.1101/2022.10.05.511014v1
+[^3]: <a href=https://www.biorxiv.org/content/10.1101/2022.10.05.511014v1>Link to paper</a>
 
 ::: column-margin
 ![Weighted accuracy of cell-type prediction. Note the \<50% accuracy for all methods.](images/paste-F0EF8E4B.png)
@@ -31,21 +35,21 @@ Cell-type annotation is a critical step in single-cell analysis pipeline. For sc
 
 ## Technologies
 
-Xiaowei Zhuang published Epigenomic MERFISH, an **imaging-based technology for spatially resolved single-cell epigenomic profiling.**[^2] Epigenomic MERFISH maps active promoters and enhancers in mouse brain and reveals putative enhancer hubs in embryonic mouse brain. 
+Xiaowei Zhuang published Epigenomic MERFISH, an **imaging-based technology for spatially resolved single-cell epigenomic profiling.**[^4] Epigenomic MERFISH maps active promoters and enhancers in mouse brain and reveals putative enhancer hubs in embryonic mouse brain.
 
-::: {.column-margin}
+[^4]: <a href=https://www.cell.com/action/showPdf?pii=S0092-8674%2822%2901254-5>Link to paper</a>
+
+::: column-margin
 Awesome spatial technologies seem to be published on a weekly basis. I wonder which ones will be commercialized and used around the world?
 :::
 
-[^2]: https://www.cell.com/action/showPdf?pii=S0092-8674%2822%2901254-5
-
 ![Epigenomic MERFISH](images/paste-3CE397CB.png)
 
-PacBio, in partnership with the Broad Institute and 10X Genomics, launched the new Multiplexed Arrays Sequencing (MAS-Seq).[^3] This technology **enables long-read scRNA-Seq for identification of alternatively spliced isoforms and gene fusions without the need for *de novo* assembly.**[^4]
+PacBio, in partnership with the Broad Institute and 10X Genomics, launched the new Multiplexed Arrays Sequencing (MAS-Seq).[^5] This technology **enables long-read scRNA-Seq for identification of alternatively spliced isoforms and gene fusions without the need for *de novo* assembly.**[^6]
 
-[^3]: https://www.pacb.com/press_releases/pacbio-launches-single-cell-transcriptome-solution-ushering-in-a-new-era-of-rna-discovery/
+[^5]: <a href=https://www.pacb.com/press_releases/pacbio-launches-single-cell-transcriptome-solution-ushering-in-a-new-era-of-rna-discovery/>Link to press release</a>
 
-[^4]: https://www.biorxiv.org/content/10.1101/2021.10.01.462818v1
+[^6]: <a href=https://www.biorxiv.org/content/10.1101/2021.10.01.462818v1>Link to paper</a>
 
 ::: column-margin
 Excellent move by 10X's single-cell division! Looking forward to the maneuvers of its spatial division.
@@ -53,13 +57,25 @@ Excellent move by 10X's single-cell division! Looking forward to the maneuvers o
 
 ## Conversations
 
-**Inter-operability of single-cell analysis frameworks is not enough, the tools should be coherent as well!** Log-fold change calculation in Seurat and Scanpy differs significantly^[https://twitter.com/slavov_n/status/1582347828818456576], as pointed out by Nikolai Slavov from a recent benchmarking paper by Davis McCarthy's lab.^[https://www.biorxiv.org/content/10.1101/2022.05.09.490241v2] This mess begs for a question: **to whom should we handle the responsibility for making the decisions in single-cell data analysis? Developers or Users?**
+**Inter-operability of single-cell analysis frameworks is not enough, the tools should be coherent as well!** Log-fold change calculation in Seurat and Scanpy differs significantly[^7], as pointed out by Nikolai Slavov from a recent benchmarking paper by Davis McCarthy's lab.[^8] This mess begs for a question: **to whom should we handle the responsibility for making the decisions in single-cell data analysis? Developers or Users?**
 
-Related to the post above, Nicola Romanò shared his observation on the danger of default parameters in single-cell analysis frameworks.^[https://twitter.com/_nicoromano_/status/1582276701874098176] If you're using Seurat, **remember to pass your `seed` into its function** instead of declaring it before calling the function, as per usual, **or else the function will override your seed.**
+[^7]: <a href=https://twitter.com/slavov_n/status/1582347828818456576>Link to Tweet</a>
 
-Yet another thread on the danger of (blindly following) the defaults, **Junhyong Kim shared his thoughts on Seurat's CP10K normalization** (i.e. dividing gene count by library depth, multiply by 10K, followed with `log1p`).^[https://twitter.com/JunhyongKim/status/1582421723286106112]. Related to this, Lior Pachter's lab published a benchmark on normalisation methods and suggested proportional fitting --> log-transformation --> proportional fitting (PFlog1pPF).^[https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1] Or should we abandon the normalisation route and instead fully embrace the count nature of scRNA-Seq data?^[https://www.biorxiv.org/content/10.1101/2022.06.01.494334v1.full]
+[^8]: <a href=https://www.biorxiv.org/content/10.1101/2022.05.09.490241v2>Link to paper</a>
 
-:::{.column-margin}
+Related to the post above, Nicola Romanò shared his observation on the danger of default parameters in single-cell analysis frameworks.[^9] If you're using Seurat, **remember to pass your `seed` into its function** instead of declaring it before calling the function, as per usual, **or else the function will override your seed.**
+
+[^9]: <a href= https://twitter.com/*nicoromano*/status/1582276701874098176>Link to Tweet</a>
+
+Yet another thread on the danger of (blindly following) the defaults, **Junhyong Kim shared his thoughts on Seurat's CP10K normalization** (i.e. dividing gene count by library depth, multiply by 10K, followed with `log1p`).[^10]. Related to this, Lior Pachter's lab published a benchmark on normalisation methods and suggested proportional fitting --\> log-transformation --\> proportional fitting (PFlog1pPF).[^11] Or should we abandon the normalisation route and instead fully embrace the count nature of scRNA-Seq data?[^12]
+
+[^10]: <a href=https://twitter.com/JunhyongKim/status/1582421723286106112>Link to Tweet</a>
+
+[^11]: <a href= https://www.biorxiv.org/content/10.1101/2022.05.06.490859v1>Link to paper</a>
+
+[^12]: <a href=https://www.biorxiv.org/content/10.1101/2022.06.01.494334v1.full>Link to paper</a>
+
+::: column-margin
 Getting confused now? Remember to include bioinformatician(s) in your team from the start.
 :::
 
