@@ -1,7 +1,7 @@
 ---
-title: ""
-description: "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more"
-date: "2022-10-16"
+title: "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more"
+description: "2022-W42"
+date: "2022-10-24"
 categories: [natural selection, epigenomics, annotation, MAS-Seq]
 format:
     html:
