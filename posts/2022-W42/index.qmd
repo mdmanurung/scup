@@ -6,13 +6,13 @@ categories: [natural selection, epigenomics, annotation, MAS-Seq]
 format:
     html:
         self-contained: true
-draft: true
+draft: false
 ---
 
 ## Applications
 
 The Black Death left its mark not only on our history but also on our immunity. Luis Barreiro's lab showed that **natural selection driven by the Black Death, that were protective at that time, could be linked to present-day susceptibility to autoimmune diseases, such as Crohn's disease.**[^1] Great combinations of ancient DNA work, population genomics, and in-vitro infections.
-	
+
 [^1]: <a href= https://www.nature.com/articles/s41586-022-05349-x#Fig3">Link to paper</a>
 
 Nicolet and Wolkers showed that **mRNA expression levels are poorly correlated with protein abundance (Pearson r \~ 0.4)**.[^2] Interestingly, certain gene charactistics, such as untranslated region (UTR) lengths, could affect mRNA-protein correlation.
