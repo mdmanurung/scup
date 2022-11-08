@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Single-Cell Updates",
     "section": "",
-    "text": "data integration\n\n\nspatial omics\n\n\nvelocity\n\n\npseudobulk\n\n\n10X Fixed RNA Profiling\n\n\n\n2022-W41\n\n\n\nMikhael D. Manurung\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsingle-cell\n\n\ncombinatorial indexing\n\n\ndata integration\n\n\norganoid\n\n\nlineage tracing\n\n\n\n2022-W40\n\n\n\nMikhael D. Manurung\n\n\nOct 9, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration\n\n\n\nCell Atlas\n\n\nTCR\n\n\nData Integration\n\n\n\n2022-W45\n\n\n\nMikhael D. Manurung\n\n\nNov 7, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more\n\n\n\nnatural selection\n\n\nepigenomics\n\n\nannotation\n\n\nMAS-Seq\n\n\n\n2022-W42\n\n\n\nMikhael D. Manurung\n\n\nOct 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntegration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more\n\n\n\ndata integration\n\n\nspatial omics\n\n\nvelocity\n\n\npseudobulk\n\n\n10X Fixed RNA Profiling\n\n\n\n2022-W41\n\n\n\nMikhael D. Manurung\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOrganoid Development, Lineage Tracing, Combinatorial Indexing, Contrastive Learning, Subcellular Spatial Omics, Tutorials\n\n\n\nsingle-cell\n\n\ncombinatorial indexing\n\n\ndata integration\n\n\norganoid\n\n\nlineage tracing\n\n\n\n2022-W40\n\n\n\nMikhael D. Manurung\n\n\nOct 9, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -108,6 +108,83 @@
     "objectID": "posts/2022-W41/index.html#acknowledgements",
     "href": "posts/2022-W41/index.html#acknowledgements",
     "title": "Integration and Dataset Imbalance, Multi-Omic Velocity, Light-Directed Spatial Transcriptomics, and many more",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nCredits to the original authors of the Twitter threads. I am here only to curate stuffs :)"
+  },
+  {
+    "objectID": "posts/2022-W45/index.html",
+    "href": "posts/2022-W45/index.html",
+    "title": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration",
+    "section": "",
+    "text": "Sten Linnarsson’s lab released two pre-prints on cell atlases (yes, not one atlas but two atlases) of the developing human brain and the adult human brain. I learnt a ton from the Methods alone and I bet you will too."
+  },
+  {
+    "objectID": "posts/2022-W45/index.html#methods",
+    "href": "posts/2022-W45/index.html#methods",
+    "title": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration",
+    "section": "Methods",
+    "text": "Methods\n100x your single-cell analysis speed by using GPU-based NVIDIA RAPIDS. Here is a walkthrough on modifying your existing code to use RAPIDS implementation.\nMo Lotfollahi presented mvTCR, a multi-view deep learning model to integrate TCR sequences and transcriptome.12 mvTCR allows the distinction of antigen-activated T cells from bystanders. It also scales to millions of cells."
+  },
+  {
+    "objectID": "posts/2022-W45/index.html#conversations",
+    "href": "posts/2022-W45/index.html#conversations",
+    "title": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration",
+    "section": "Conversations",
+    "text": "Conversations\nWhat is your favourite single-cell data integration methods? In this thread, many people shared their thoughts, and as always, there is no one true algorithm. scVI seemed to be the favourite of many, though harmony was also mentioned a lot. However, stupidly simple methods, such as downsampling UMI counts, could actually be the most robust option.3 Anyway, I would recommend to focus less on batch removal (please stop using UMAP or tSNE as your main evidence of a ‘successful data integration’, whatever that means) and emphasise preservation of biological variance. The scib pipeline can help you with measuring batch correction and biological variance conservation metrics.\nHere’s a thread4 sharing DropletQC, a great method to separate cells and empty droplets by Joseph Powell’s lab. Python users, rejoice! Apparently, Sten Linnarson provides an implementation to do this in Python using his lab’s cytograph-shoji."
+  },
+  {
+    "objectID": "posts/2022-W45/index.html#miscellaneous",
+    "href": "posts/2022-W45/index.html#miscellaneous",
+    "title": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration",
+    "section": "Miscellaneous",
+    "text": "Miscellaneous\n\nLearning Resources\nDo you want to get started in single-cell proteomics? Prof. Nikolai Slavov is here to help. Here is the link to his talk. His lab website also provides a plethora of information on aything related to single-cell proteomics.\nMark Sanborn (@Sanbomics) provides numerous single-cell RNAseq analysis live-coding videos in his Youtube channel. His complete single-cell RNAseq analysis walkthrough is particularly great."
+  },
+  {
+    "objectID": "posts/2022-W45/index.html#acknowledgements",
+    "href": "posts/2022-W45/index.html#acknowledgements",
+    "title": "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\nCredits to the original authors of the Twitter threads. I am here only to curate stuffs :)"
+  },
+  {
+    "objectID": "posts/2022-W42/index.html",
+    "href": "posts/2022-W42/index.html",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
+    "section": "",
+    "text": "The Black Death left its mark not only on our history but also on our immunity. Luis Barreiro’s lab showed that natural selection driven by the Black Death, that were protective at that time, could be linked to present-day susceptibility to autoimmune diseases, such as Crohn’s disease.1 Great combinations of ancient DNA work, population genomics, and in-vitro infections.\nNicolet and Wolkers showed that mRNA expression levels are poorly correlated with protein abundance (Pearson r ~ 0.4).2 Interestingly, certain gene charactistics, such as untranslated region (UTR) lengths, could affect mRNA-protein correlation.\n\n\n\n\n\nFigure 1E: Correlation between mRNA and protein abundance in activated T cells."
+  },
+  {
+    "objectID": "posts/2022-W42/index.html#methods",
+    "href": "posts/2022-W42/index.html#methods",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
+    "section": "Methods",
+    "text": "Methods\nCell-type annotation is a critical step in single-cell analysis pipeline. For scATAC-Seq, we can annotate cells using either tools developed for scRNA-Seq or transfer labels from RNA to ATAC. Here, Yuge Wang and colleagues performed a thorough benchmarking and showed subpar performance of all these methods.3 Using Multiome data as reference can help improve the accuracy, but only to some extent.\n\n\n\n\n\nWeighted accuracy of cell-type prediction. Note the <50% accuracy for all methods."
+  },
+  {
+    "objectID": "posts/2022-W42/index.html#technologies",
+    "href": "posts/2022-W42/index.html#technologies",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
+    "section": "Technologies",
+    "text": "Technologies\nXiaowei Zhuang published Epigenomic MERFISH, an imaging-based technology for spatially resolved single-cell epigenomic profiling.4 Epigenomic MERFISH maps active promoters and enhancers in mouse brain and reveals putative enhancer hubs in embryonic mouse brain.\n\n\nAwesome spatial technologies seem to be published on a weekly basis. I wonder which ones will be commercialized and used around the world?\n\n\n\nEpigenomic MERFISH\n\n\nPacBio, in partnership with the Broad Institute and 10X Genomics, launched the new Multiplexed Arrays Sequencing (MAS-Seq).5 This technology enables long-read scRNA-Seq for identification of alternatively spliced isoforms and gene fusions without the need for de novo assembly.6\n\n\nExcellent move by 10X’s single-cell division! Looking forward to the maneuvers of its spatial division."
+  },
+  {
+    "objectID": "posts/2022-W42/index.html#conversations",
+    "href": "posts/2022-W42/index.html#conversations",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
+    "section": "Conversations",
+    "text": "Conversations\nInter-operability of single-cell analysis frameworks is not enough, the tools should be coherent as well! Log-fold change calculation in Seurat and Scanpy differs significantly7, as pointed out by Nikolai Slavov from a recent benchmarking paper by Davis McCarthy’s lab.8 This mess begs for a question: to whom should we handle the responsibility for making the decisions in single-cell data analysis? Developers or Users?\nRelated to the post above, Nicola Romanò shared his observation on the danger of default parameters in single-cell analysis frameworks.9 If you’re using Seurat, remember to pass your seed into its function instead of declaring it before calling the function, as per usual, or else the function will override your seed.\nYet another thread on the danger of (blindly following) the defaults, Junhyong Kim shared his thoughts on Seurat’s CP10K normalization (i.e. dividing gene count by library depth, multiply by 10K, followed with log1p).10. Related to this, Lior Pachter’s lab published a benchmark on normalisation methods and suggested proportional fitting –> log-transformation –> proportional fitting (PFlog1pPF).11 Or should we abandon the normalisation route and instead fully embrace the count nature of scRNA-Seq data?12\n\n\nGetting confused now? Remember to include bioinformatician(s) in your team from the start."
+  },
+  {
+    "objectID": "posts/2022-W42/index.html#miscellaneous",
+    "href": "posts/2022-W42/index.html#miscellaneous",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
+    "section": "Miscellaneous",
+    "text": "Miscellaneous\n\nJobs\nLuciano Martelotto has an open Senior Scientist position."
+  },
+  {
+    "objectID": "posts/2022-W42/index.html#acknowledgements",
+    "href": "posts/2022-W42/index.html#acknowledgements",
+    "title": "The Black Death, Epigenomic MERFISH, Single-Cell Long-Read Sequencing, Be Mindful of the Defaults, and more",
     "section": "Acknowledgements",
     "text": "Acknowledgements\n\nCredits to the original authors of the Twitter threads. I am here only to curate stuffs :)"
   }

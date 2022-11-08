@@ -1,0 +1,50 @@
+---
+title: "Brain cell atlases, Integrating TCR and Transcriptome, Data Integration"
+description: "2022-W45"
+date: "2022-11-07"
+categories: [Cell Atlas, TCR, Data Integration]
+format:
+    html:
+        self-contained: true
+draft: false
+---
+
+## Applications
+
+Sten Linnarsson's lab released two pre-prints on cell atlases (yes, not one atlas but two atlases) of [the developing human brain](https://www.biorxiv.org/content/10.1101/2022.10.24.513487v1.full.pdf) and [the adult human brain](https://www.biorxiv.org/content/10.1101/2022.10.12.511898v1.full.pdf). I learnt **a ton** from the Methods alone and I bet you will too.
+
+![](images/paste-2F3F8D93.png)
+
+## Methods
+
+**100x your single-cell analysis speed by using GPU-based NVIDIA RAPIDS.** Here is a walkthrough on [modifying your existing code to use RAPIDS implementation](https://developer.nvidia.com/blog/achieving-100x-faster-single-cell-modality-prediction-with-nvidia-rapids-cuml/?ncid=so-nvsh-344619-vt27&dysig_tid=62888b8daadf408cb1dbe45bf533fb5a#cid=an01_so-nvsh_en-us).
+
+Mo Lotfollahi presented mvTCR, a multi-view deep learning model to integrate TCR sequences and transcriptome.[^1][^2] mvTCR allows the distinction of antigen-activated T cells from bystanders. It also scales to millions of cells.
+
+![](images/paste-558E4A02.png)
+
+## Conversations
+
+**What is your favourite single-cell data integration methods**? In [this thread](https://twitter.com/TheLucyGarner/status/1585729593147035648), many people shared their thoughts, and as always, there is no one true algorithm. scVI seemed to be the favourite of many, though harmony was also mentioned a lot. However, stupidly simple methods, such as downsampling UMI counts, could actually be the most robust option.[^3] Anyway, I would recommend to focus less on batch removal (please stop using UMAP or tSNE as your main evidence of a 'successful data integration', whatever that means) and emphasise preservation of biological variance. The [scib pipeline](https://github.com/theislab/scib-pipeline) can help you with measuring batch correction and biological variance conservation metrics.
+
+Here's a thread[^4] sharing [DropletQC](https://powellgenomicslab.github.io/DropletQC/), a great method to separate cells and empty droplets by Joseph Powell's lab. Python users, rejoice! Apparently, Sten Linnarson provides an implementation to do this in Python using his lab's [cytograph-shoji](https://github.com/linnarsson-lab/cytograph-shoji/blob/main/cytograph/preprocessing/classify_droplets.py).
+
+## Miscellaneous
+
+### Learning Resources
+
+**Do you want to get started in single-cell proteomics?** Prof. Nikolai Slavov is here to help. Here is the link to [his talk](https://www.youtube.com/watch?v=1t0jugs2lcs). His [lab website](https://slavovlab.net/research.htm) also provides a plethora of information on aything related to single-cell proteomics.
+
+Mark Sanborn (@Sanbomics) provides numerous single-cell RNAseq analysis live-coding videos in his [Youtube channel](https://www.youtube.com/channel/UCuf90yPD_Yx53xZyVLtvRmA). His [complete single-cell RNAseq analysis walkthrough](https://youtu.be/uvyG9yLuNSE) is particularly great.
+
+## Acknowledgements {.appendix}
+
+Credits to the original authors of the Twitter threads. I am here only to curate stuffs :)
+
+[^1]: <a href= https://www.biorxiv.org/content/10.1101/2021.06.24.449733v2.full.pdf> Link to paper</a>
+
+[^2]: <a href= https://twitter.com/Mohlotf/status/1585704556809396225> Link to Tweetorial</a>
+
+[^3]: <a href= https://www.biorxiv.org/content/10.1101/2021.11.15.468733v1.full>Link to paper</a>
+
+[^4]: <a href= https://twitter.com/seankenneths/status/1585252865295011840>Link to Tweet</a>
